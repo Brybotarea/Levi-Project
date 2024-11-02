@@ -1,4 +1,4 @@
-const axios = require("axios");
+const axios = require('axios');
 const fs = require('fs')
 const baseApiUrl = async () => {
   const base = await axios.get(
@@ -6,6 +6,7 @@ const baseApiUrl = async () => {
   );
   return base.data.api;
 };
+
 module.exports = {
   config: {
     name: "sing",
