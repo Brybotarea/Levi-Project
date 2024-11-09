@@ -44,7 +44,7 @@ module.exports.run = async function({ api, event, args }) {
       ? { link: event.messageReply.attachments[0].url }
       : {};
 
-    const { data } = await axios.post('https://markdevs69v2-679r.onrender.com/new/api/gpt3?prompt=&uid=', {
+    const { data } = await axios.post('https://api.kenliejugarap.com/freegpt-openai/?question=', {
       prompt: input,
       customId: event.senderID,
       ...url
